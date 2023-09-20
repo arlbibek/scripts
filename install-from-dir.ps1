@@ -1,3 +1,16 @@
+<#
+.SYNOPSIS
+This PowerShell script simplifies the process of installing applications (.exe files) from a specified directory.
+
+.DESCRIPTION
+The script creates a Windows Forms GUI that allows you to select and install .exe files from a chosen directory. 
+It includes features like selecting all apps and providing real-time updates based on the directory path you specify.
+
+.NOTES
+Made with ❤️ by Bibek Aryal.
+GitHub Repository: https://github.com/arlbibek/scripts/blob/master/install-from-dir.ps1
+#>
+
 # Check if the script is running as administrator
 $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
